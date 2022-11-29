@@ -47,8 +47,8 @@ def test_table(contributors_data, row, width, font_size, head, tail, rsb,
 
 
 @pytest.mark.parametrize(
-    'content, contributors_table, CONTRIBUTOR, PATH, text',
+    'content, contributors_table, DEV_STACK, PATH, text',
     case['test_content_case'])
-def test_content(content, contributors_table, CONTRIBUTOR, PATH, text):
+def test_content(content, contributors_table, DEV_STACK, PATH, text):
     assert text == main.generate_content(content, contributors_table,
-                                         CONTRIBUTOR, PATH)
+                                         DEV_STACK, PATH)

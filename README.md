@@ -33,7 +33,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: BobAnkh/add-contributors@master
       with:
-        CONTRIBUTOR: '### Contributors'
+        CONTRIBUTOR: '### Dev stack'
         COLUMN_PER_ROW: '6'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
@@ -48,7 +48,7 @@ jobs:
 | Parameter            | Description                                                 | Required | Default                                            |
 | -------------------- | ----------------------------------------------------------- | -------- | -------------------------------------------------- |
 | REPO_NAME            | Repository name                                             | no       | `''` which means current repository                |
-| CONTRIBUTOR          | Where you want to add contributors list                     | no       | `### Contributors`                                 |
+| CONTRIBUTOR          | Where you want to add contributors list                     | no       | `### Dev stack`                                 |
 | COLUMN_PER_ROW       | Number of contributors per row                              | no       | `6`                                                |
 | ACCESS_TOKEN         | Github Access Token                                         | yes      | You can just pass `${{secrets.GITHUB_TOKEN}}`      |
 | IMG_WIDTH            | Width of img                                                | no       | `100`                                              |
@@ -97,7 +97,7 @@ optional arguments:
                         Github Access Token
 ```
 
-### Contributors
+### Dev stack
 
 <table>
 <tr>

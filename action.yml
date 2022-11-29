@@ -1,6 +1,6 @@
-name: "Auto-add contributors"
-description: "Add contributors to your file automatically on schedule"
-author: "BobAnkh"
+name: "Auto-add versions"
+description: "Add version and implementation to the ReadMe"
+author: "Vithano"
 branding:
   icon: 'award'
   color: 'orange'
@@ -9,14 +9,10 @@ inputs:
     description: "The name of the repo: user/repo_name"
     required: false
     default: ''
-  CONTRIBUTOR:
-    description: "Where you want to add contributors"
+  DEV_STACK:
+    description: "Where you want to add the dev stack"
     required: false
-    default: '### Contributors'
-  COLUMN_PER_ROW:
-    description: "Number of contributors per row"
-    required: false
-    default: '6'
+    default: '### Dev stack'
   ACCESS_TOKEN:
     description: "Github Access Token you want to use. Just pass GITHUB_TOKEN"
     required: true
@@ -52,6 +48,14 @@ inputs:
     description: "Ignored contributors, seperated by comma"
     required: false
     default: ''
+  COLUMNS:
+    description: "The column names"
+    required: false
+    default: ''
+  PACKAGES_TO_SHOW:
+    description: "The packages to show"
+    required: false
+    default: 'all'
 runs:
   using: "docker"
   image: "Dockerfile"

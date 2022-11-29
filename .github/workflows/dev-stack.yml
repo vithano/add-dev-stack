@@ -1,4 +1,4 @@
-name: Add contributors
+name: Add dev stack
 on:
   schedule:
     - cron:  '20 20 * * *'
@@ -7,17 +7,16 @@ on:
       - master
 
 jobs:
-  add-contributors:
+  add-dev-stack:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: BobAnkh/add-contributors@master
+    - uses: vithano/add-dev-stack@master
       with:
-        CONTRIBUTOR: '### Contributors'
-        COLUMN_PER_ROW: '6'
+        DEV_STACK: '### Dev stack'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
         PATH: '/README.md'
-        COMMIT_MESSAGE: 'docs(README): update contributors'
-        AVATAR_SHAPE: 'round'
+        COMMIT_MESSAGE: 'docs(README): update dev stack'
+        PACKAGES_TO_SHOW: 'all'

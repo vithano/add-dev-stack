@@ -1,4 +1,4 @@
-name: Add contributors
+name: Add dev stack
 on:
   push:
     branches: 
@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: BobAnkh/add-contributors@dev
+    - uses: vithano/add-dev-stack@dev
       with:
-        REPO_NAME: 'BobAnkh/add-contributors'
-        CONTRIBUTOR: '### Contributors'
-        COLUMN_PER_ROW: '6'
+        REPO_NAME: 'vithano/add-dev-stack'
+        DEV_STACK: '### Dev stack'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
         PATH: 'dev:/README.md'
-        COMMIT_MESSAGE: 'docs(README): update contributors'
+        COMMIT_MESSAGE: 'docs(README): update dev stack'
         AVATAR_SHAPE: 'round'
+        PACKAGES_TO_SHOW: 'all'
