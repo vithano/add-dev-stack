@@ -130,8 +130,8 @@ class GithubWrite:
         dev_stack_data = self.find_deps(packageJson)
 
         for package in dev_stack_data:
-            name = package.name
-            version = package.version
+            name = package["name"]
+            version = package["version"]
             print(f'[DEBUG]{name}:{version}')
             if re.match('apps/', name):
                 continue
