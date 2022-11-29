@@ -371,7 +371,7 @@ def map_package_to_framework_type(package_name):
         },
         'next': {
             'type': 'Frontend Framework',
-            'logo': 'https://user-images.githubusercontent.com/4253088/196269841-32444c2d-7798-471d-8c7d-455323680297.png'
+            'logo': 'https://user-images.githubusercontent.com/4253088/196269841-32444c2d-7798-471d-8c7d-455323680297.png',
             'dev': 'https://nextjs.org/docs/getting-started'
         },
         'express': {
