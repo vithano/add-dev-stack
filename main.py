@@ -578,7 +578,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         str: dev stack table in html format
     '''
     HEAD = head_format
-    if columns == ''
+    if columns == '':
         columns = ['Type','Package','Version']
     else:
         columns = columns.split(',')
