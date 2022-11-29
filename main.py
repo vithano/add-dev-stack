@@ -599,11 +599,11 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         latest_version = requests.get(f'https://unpkg.com/{name}/package.json').json()['version']
         if version == 'latest':
             version = latest_version
-        else if version[0] == latest_version[0]:
+        elif version[0] == latest_version[0]:
             version = f'https://img.shields.io/badge/{version}-brightgreen'
-        else if version[0] - latest_version[0] == 1:
+        elif version[0] - latest_version[0] == 1:
             version = f'https://img.shields.io/badge/{version}-yellow'
-        else if version[0] - latest_version[0] > 1:
+        elif version[0] - latest_version[0] > 1:
             version = f'https://img.shields.io/badge/{version}-red'
         new_tr = '''\n</tr>\n<tr>'''
         HEAD = HEAD + new_tr
