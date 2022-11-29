@@ -598,7 +598,11 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         version = package['version']
         package_obj = map_package_to_framework_type(name)
         # fetch latest version from unpkg
-        latest_version = requests.get(f'https://unpkg.com/{name}/package.json').json()['version']
+        response = requests.get(f'https://unpkg.com/{name}/package.json')
+        response.raise_for_status()  # raises exception when not a 2xx response
+        if response.status_code != 204:
+            json = response.json()
+        latest_version = json['version']
         if version == 'latest':
             version = latest_version
         elif version[0] == latest_version[0]:
