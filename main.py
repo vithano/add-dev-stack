@@ -613,7 +613,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
             img_style = ' style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px"'
         else:
             img_style = ''
-        logo = package_obj['name'].capitalize()
+        logo = name.capitalize()
         if package_obj['logo'] != '':
             logo = f'''<img width="{img_width};" src={package_obj["logo"]} {img_style} alt={name}/>'''
         td = f'''
