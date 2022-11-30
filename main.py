@@ -122,14 +122,24 @@ class GithubWrite:
                                 'version': version
                             })
         return all_deps
-        
+    def order_dev_stack_data(self,dev_stack_data):
+        # order dev stack data by package name and PACKAGES_TO_SHOW
+        ordered_dev_stack_data = []
+        if self.PACKAGES_TO_SHOW == 'all':
+            return dev_stack_data
+        for package in self.PACKAGES_TO_SHOW.split(',').strip():
+            for dev_stack in dev_stack_data:
+                if dev_stack['name'] == package:
+                    ordered_dev_stack_data.append(dev_stack)
+        return ordered_dev_stack_data
+
     def get_data(self):
         # get dev stack data
         packageJson = self.repo.get_contents('package.json')
         print('[DEBUG]All dev stack\' names:')
         
         my_dev_stack = self.find_deps(packageJson)
-
+        my_dev_stack = self.order_dev_stack_data(my_dev_stack)
         for package in my_dev_stack:
             name = package["name"]
             version = package["version"]
