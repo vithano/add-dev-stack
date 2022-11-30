@@ -115,9 +115,9 @@ class GithubWrite:
                         obj = map_package_to_framework_type(name)
                         all_deps.append({
                             'name': name,
-                            'version': version
-                            'type': obj.get('type','')
-                            'dev': obj.get('dev','')
+                            'version': version,
+                            'type': obj.get('type',''),
+                            'dev': obj.get('dev',''),
                             'logo': obj.get('logo','')
                         })
                     else:
@@ -125,9 +125,9 @@ class GithubWrite:
                             obj = map_package_to_framework_type(name)
                             all_deps.append({
                                 'name': name,
-                                'version': version
-                                'type': obj.get('type','')
-                                'dev': obj.get('dev','')
+                                'version': version,
+                                'type': obj.get('type',''),
+                                'dev': obj.get('dev',''),
                                 'logo': obj.get('logo','')
                             })
         return all_deps
