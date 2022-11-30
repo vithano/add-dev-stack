@@ -52,7 +52,7 @@ class GithubWrite:
 
     Use it to get dev stack data and file content from Github and write new file content to Github
     '''
-    def __init__(self, ACCESS_TOKEN, REPO_NAME, PATH, BRANCH, PULL_REQUEST, COMMIT_MESSAGE,PACKAGES_TO_SHOW):
+    def __init__(self, ACCESS_TOKEN, REPO_NAME, PATH, BRANCH, PULL_REQUEST, COMMIT_MESSAGE,PACKAGES_TO_SHOW,TYPES_TO_SHOW):
         '''
         Initial GithubWrite
 
@@ -72,6 +72,7 @@ class GithubWrite:
         self.dev_stack_data = []
         self.file_content = ''
         self.PACKAGES_TO_SHOW = PACKAGES_TO_SHOW
+        self.TYPES_TO_SHOW = TYPES_TO_SHOW
         # Use PyGithub to login to the repository
         # References: https://pygithub.readthedocs.io/en/latest/github_objects/Repository.html#github.Repository.Repository
         g = github.Github(ACCESS_TOKEN)
@@ -124,14 +125,21 @@ class GithubWrite:
         return all_deps
     def order_dev_stack_data(self,dev_stack_data):
         # order dev stack data by package name and PACKAGES_TO_SHOW
-        ordered_dev_stack_data = []
-        if self.PACKAGES_TO_SHOW == 'all':
-            return dev_stack_data
-        for package in self.PACKAGES_TO_SHOW.split(',').strip():
-            for dev_stack in dev_stack_data:
-                if dev_stack['name'] == package:
-                    ordered_dev_stack_data.append(dev_stack)
-        return ordered_dev_stack_data
+        ordered_dev_stack_data = dev_stack_data
+        if self.PACKAGES_TO_SHOW != 'all':
+            ordered_dev_stack_data = []
+            for package in self.PACKAGES_TO_SHOW.split(',').strip():
+                for dev_stack in dev_stack_data:
+                    if dev_stack['name'] == package:
+                        ordered_dev_stack_data.append(dev_stack)
+        ordered_dev_stack_data_typed = ordered_dev_stack_data
+        if self.TYPES_TO_SHOW != 'all':
+            ordered_dev_stack_data_typed = []
+            for type_to_show in self.TYPES_TO_SHOW:
+                for dev_stack in ordered_dev_stack_data:
+                    if dev_stack['type'] == type_to_show:
+                        ordered_dev_stack_data_typed.append(dev_stack)
+        return ordered_dev_stack_data_typed
 
     def get_data(self):
         # get dev stack data
@@ -520,6 +528,41 @@ def map_package_to_framework_type(package_name):
             'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
             'dev': 'https://storybook.js.org/docs/react/get-started/introduction'
         },
+        '@storybook/react': {
+            'type': 'Component library',
+            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
+            'dev': 'https://storybook.js.org/docs/react/get-started/introduction'
+        },
+        '@storybook/vue': {
+            'type': 'Component library',
+            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
+            'dev': 'https://storybook.js.org/docs/vue/get-started/introduction'
+        },
+        '@storybook/angular': {
+            'type': 'Component library',
+            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
+            'dev': 'https://storybook.js.org/docs/angular/get-started/introduction'
+        },
+        '@storybook/svelte': {
+            'type': 'Component library',
+            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
+            'dev': 'https://storybook.js.org/docs/svelte/get-started/introduction'
+        },
+        '@storybook/html': {
+            'type': 'Component library',
+            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
+            'dev': 'https://storybook.js.org/docs/html/get-started/introduction'
+        },
+        '@storybook/addon-docs': {
+            'type': 'Component library',
+            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
+            'dev': 'https://storybook.js.org/docs/react/writing-docs/introduction'
+        },
+        '@storybook/addon-controls': {
+            'type': 'Component library',
+            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-',
+            'dev': 'https://storybook.js.org/docs/react/essentials/controls'
+        },
         'react-styleguidist': {
             'type': 'Component library',
             'logo': ''
@@ -767,6 +810,7 @@ def main():
     FONT_SIZE = int(get_inputs('FONT_SIZE'))
     COLUMNS = get_inputs('COLUMNS')
     PACKAGES_TO_SHOW = get_inputs('PACKAGES_TO_SHOW')
+    TYPES_TO_SHOW = get_inputs('TYPES_TO_SHOW')
     PATH = get_inputs('PATH')
     BRANCH = get_inputs('BRANCH')
     if BRANCH == '':
@@ -775,7 +819,7 @@ def main():
     COMMIT_MESSAGE = get_inputs('COMMIT_MESSAGE')
     AVATAR_SHAPE = get_inputs('AVATAR_SHAPE')
     GithubWriteData = GithubWrite(ACCESS_TOKEN, REPO_NAME, PATH, BRANCH, PULL_REQUEST,
-                                      COMMIT_MESSAGE,PACKAGES_TO_SHOW)
+                                      COMMIT_MESSAGE,PACKAGES_TO_SHOW,TYPES_TO_SHOW)
     GithubWriteData.get_data()
     dev_stack_table = generate_dev_stack_table(
         GithubWriteData.read_dev_stack(), IMG_WIDTH, FONT_SIZE,

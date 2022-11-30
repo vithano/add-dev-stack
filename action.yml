@@ -56,6 +56,10 @@ inputs:
     description: "The packages to show"
     required: false
     default: 'all'
+  TYPES_TO_SHOW:
+    description: "The types to show"
+    required: false
+    default: 'all'
 runs:
   using: "docker"
   image: "Dockerfile"
