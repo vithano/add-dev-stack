@@ -247,6 +247,23 @@ optional arguments:
         
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="@fullpower-stack/eslint-config-custom" href="">
+            @fullpower-stack/eslint-config-custom
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/@fullpower-stack/eslint-config-custom">
+            <img src="https://img.shields.io/badge/workspace-brightgreen"  alt="@fullpower-stack/eslint-config-custom"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="@ladle/react" href="">
             @ladle/react
         </a>
@@ -441,6 +458,23 @@ optional arguments:
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/autoprefixer">
             <img src="https://img.shields.io/badge/10.4.12-brightgreen"  alt="autoprefixer"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Lint
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="eslint" href="https://eslint.org/docs/user-guide/getting-started">
+            Eslint
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/eslint">
+            <img src="https://img.shields.io/badge/7.32.0-brightgreen"  alt="eslint"/>
         </a>
     </td>
 
