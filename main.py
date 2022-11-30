@@ -83,7 +83,8 @@ class GithubWrite:
         list_of_chars = ['<', '=', '>', '\-', '*', 'x', 'X', '~', '^', 'v', 'V', '@', "'",'"']
         pattern = '[' +  ''.join(list_of_chars) +  ']'
         # get packageManager version
-        package_manager = packageJson.decoded_content.decode('utf-8').split('packageManager')[1].split(':')[1].split('"')[1]
+        decoded_string = packageJson.decoded_content.decode('utf-8')
+        package_manager = decoded_string.split('packageManager')[1].split(':')[1].split('"')[1]
         package_manager_version = package_manager.split('@')[1]
         package_manager_name = package_manager.split('@')[0]
         if self.PACKAGES_TO_SHOW == 'all' or package_manager_name in self.PACKAGES_TO_SHOW:
@@ -94,13 +95,13 @@ class GithubWrite:
         dependency_types = ['dependencies', 'devDependencies']
         # get all dependencies and devDependencies from package.json file
         for dependency_type in dependency_types:
-            deps = packageJson.decoded_content.decode('utf-8').split(f'{dependency_type}: {{')
+            deps = decoded_string.split(f'"{dependency_type}": {{')
             if len(deps) == 1:
-                deps = packageJson.decoded_content.decode('utf-8').split(f'{dependency_type} : {{')
+                deps = decoded_string.split(f'"{dependency_type}" : {{')
             if len(deps) == 1:
-                deps = packageJson.decoded_content.decode('utf-8').split(f'{dependency_type}:{{')
+                deps = decoded_string.split(f'"{dependency_type}":{{')
             if len(deps) == 1:
-                deps = packageJson.decoded_content.decode('utf-8').split(f'{dependency_type} :{{')
+                deps = decoded_string.split(f'"{dependency_type}" :{{')
             if len(deps) > 1:
                 deps = deps[1].split('}')[0].split(',')
             for dep in deps:
