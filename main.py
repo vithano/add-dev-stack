@@ -601,6 +601,8 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         package_type = package_obj.get('type', '')
         package_logo = package_obj.get('logo', '')
         package_dev = package_obj.get('dev', '')
+        if package_type == '':
+            continue
         # fetch latest version from unpkg
         try:
             response = requests.get(f'https://unpkg.com/{name}/package.json')
