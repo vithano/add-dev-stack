@@ -641,8 +641,8 @@ def generate_dev_stack_table(dev_stack_data, img_width,
 
         '''
             HEAD = HEAD + td
-            except:
-                continue
+        except:
+            continue
     HEAD = HEAD + TAIL
     return HEAD
 
