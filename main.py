@@ -128,16 +128,16 @@ class GithubWrite:
         ordered_dev_stack_data = dev_stack_data
         if self.PACKAGES_TO_SHOW != 'all':
             ordered_dev_stack_data = []
-            for package in self.PACKAGES_TO_SHOW.split(',').strip():
+            for package in self.PACKAGES_TO_SHOW.split(','):
                 for dev_stack in dev_stack_data:
-                    if dev_stack.get('name','') == package:
+                    if dev_stack.get('name','') == package.strip():
                         ordered_dev_stack_data.append(dev_stack)
         ordered_dev_stack_data_typed = ordered_dev_stack_data
         if self.TYPES_TO_SHOW != 'all':
             ordered_dev_stack_data_typed = []
-            for type_to_show in self.TYPES_TO_SHOW.split(',').strip():
+            for type_to_show in self.TYPES_TO_SHOW.split(','):
                 for dev_stack in ordered_dev_stack_data:
-                    if dev_stack.get('type','') == type_to_show:
+                    if dev_stack.get('type','') == type_to_show.strip():
                         ordered_dev_stack_data_typed.append(dev_stack)
         return ordered_dev_stack_data_typed
 
