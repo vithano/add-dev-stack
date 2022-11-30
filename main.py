@@ -603,8 +603,6 @@ def generate_dev_stack_table(dev_stack_data, img_width,
             response = requests.get(f'https://unpkg.com/{name}/package.json').raise_for_status()
             if response.status_code != 204:
                 json = response.json()
-        except:
-            continue
         if 'version' in json:
             latest_version = json['version']
         else:
@@ -643,6 +641,8 @@ def generate_dev_stack_table(dev_stack_data, img_width,
 
     '''
         HEAD = HEAD + td
+        except:
+            continue
     HEAD = HEAD + TAIL
     return HEAD
 
