@@ -99,6 +99,15 @@ optional arguments:
 
 ### Dev stack
 
+<table>
+<tr>
+    <th>Type</th>
+    <th>Package</th>
+    <th>Version</th>
+
+</tr>
+</table>
+
 ## LICENSE
 
 [Apache-2.0](/LICENSE) © BobAnkh
