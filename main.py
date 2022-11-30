@@ -601,12 +601,11 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         package_type = package_obj.get('type', '')
         package_logo = package_obj.get('logo', '')
         package_dev = package_obj.get('dev', '')
-        print(package_logo)
-        print(package_dev)
-        print(package_type)
         # fetch latest version from unpkg
         try:
             response = requests.get(f'https://unpkg.com/{name}/package.json').raise_for_status()
+            print(f'Fetching latest version of {name} from unpkg')
+            print(response)
             if response.status_code != 204:
                 json = response.json()
             if 'version' in json:
