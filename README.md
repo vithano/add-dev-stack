@@ -101,27 +101,10 @@ optional arguments:
 
 <table>
 <tr>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/BobAnkh>
-            <img src=https://avatars.githubusercontent.com/u/44333669?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Yixin Shen/>
-            <br />
-            <sub style="font-size:14px"><b>Yixin Shen</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/baileythegreen>
-            <img src=https://avatars.githubusercontent.com/u/12277715?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bailey Harrington/>
-            <br />
-            <sub style="font-size:14px"><b>Bailey Harrington</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/casperklein>
-            <img src=https://avatars.githubusercontent.com/u/590174?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Casper/>
-            <br />
-            <sub style="font-size:14px"><b>Casper</b></sub>
-        </a>
-    </td>
+    <th>Type</th>
+    <th>Package</th>
+    <th>Version</th>
+
 </tr>
 </table>
 
