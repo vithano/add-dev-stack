@@ -19,4 +19,4 @@ jobs:
         FONT_SIZE: '14'
         PATH: '/README.md'
         COMMIT_MESSAGE: 'docs(README): update dev stack'
-        TYPES_TO_SHOW: 'Package manager,Monorepo manager,Frontend,Frontend css,Server-Client communication,Backend,ORM,Testing,Testing components,Component library,Test mocks,Lint'
+        TYPES_TO_SHOW: 'Package manager,Monorepo manager,Frontend Framework,CSS Framework,Server-client communication,Backend Framework,ORM,Test runner,Testing components,Component library,Mocking,Lint'
