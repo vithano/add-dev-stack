@@ -135,7 +135,7 @@ class GithubWrite:
         ordered_dev_stack_data_typed = ordered_dev_stack_data
         if self.TYPES_TO_SHOW != 'all':
             ordered_dev_stack_data_typed = []
-            for type_to_show in self.TYPES_TO_SHOW:
+            for type_to_show in self.TYPES_TO_SHOW.split(',').strip():
                 for dev_stack in ordered_dev_stack_data:
                     if dev_stack.get('type','') == type_to_show:
                         ordered_dev_stack_data_typed.append(dev_stack)
