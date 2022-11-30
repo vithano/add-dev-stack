@@ -163,7 +163,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="eslint" href="https://eslint.org/docs/user-guide/getting-started">
-            Eslint
+            <img style="width:width:100;"   alt="eslint"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -179,8 +179,8 @@ optional arguments:
         Lint
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a aria-label="husky" href="">
-            Husky
+        <a aria-label="husky" >
+            <img style="width:width:100;"   alt="husky"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -196,8 +196,8 @@ optional arguments:
         Lint
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a aria-label="lint-staged" href="">
-            Lint-staged
+        <a aria-label="lint-staged" >
+            <img style="width:width:100;"   alt="lint-staged"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -213,8 +213,8 @@ optional arguments:
         Lint
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a aria-label="prettier" href="">
-            Prettier
+        <a aria-label="prettier" >
+            <img style="width:width:100;"   alt="prettier"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
