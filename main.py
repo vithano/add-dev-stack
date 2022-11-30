@@ -623,7 +623,6 @@ def generate_dev_stack_table(dev_stack_data, img_width,
                 version = f'https://img.shields.io/badge/{version}-red'
         except:
             version = f'https://img.shields.io/badge/{version}-brightgreen'
-            continue
         new_tr = '''\n</tr>\n<tr>'''
         HEAD = HEAD + new_tr
         if shape == 'round':
