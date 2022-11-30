@@ -635,8 +635,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         package_src = ''
         package_dev_ref = ''
         if package_logo != '':
-            package_src = f'src="{package_logo}"'
-        logo = f'''<img style="width:width:{img_width};" {package_src} {img_style} alt="{name}"/>'''
+            logo = f'''<img style="width:width:{img_width};" src="{package_logo}" {img_style} alt="{name}"/>'''
         if package_dev != '':
             package_dev_ref = f'href="{package_dev}"'
         td = f'''
