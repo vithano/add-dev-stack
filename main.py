@@ -617,7 +617,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
                 latest_version = version
             if version == 'latest':
                 version = latest_version
-            elif version[0] == latest_version[0]:
+            if version[0] == latest_version[0]:
                 version = f'https://img.shields.io/badge/{version}-brightgreen'
             elif version[0] - latest_version[0] == 1:
                 version = f'https://img.shields.io/badge/{version}-yellow'
