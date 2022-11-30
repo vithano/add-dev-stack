@@ -112,7 +112,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="turbo" href="https://turborepo.org/docs">
-            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png"  alt="turbo"/>
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png"  alt="turbo"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -129,7 +129,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="tailwindcss" href="https://tailwindcss.com/docs/installation">
-            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png"  alt="tailwindcss"/>
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png"  alt="tailwindcss"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -146,7 +146,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="vitest" href="https://vitest.dev/">
-            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196270525-cea1d088-d329-4dba-879d-5e48ef779544.png"  alt="vitest"/>
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196270525-cea1d088-d329-4dba-879d-5e48ef779544.png"  alt="vitest"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -163,7 +163,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="@testing-library/react" href="https://testing-library.com/docs/react-testing-library/intro/">
-            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png"  alt="@testing-library/react"/>
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png"  alt="@testing-library/react"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -180,7 +180,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="@storybook/react" href="https://storybook.js.org/docs/react/get-started/introduction">
-            <img style="width:width:100;" src="https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"  alt="@storybook/react"/>
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"  alt="@storybook/react"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
