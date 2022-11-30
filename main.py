@@ -632,14 +632,19 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         else:
             img_style = ''
         logo = name.capitalize()
-        if package_obj.get('logo','') != '':
-            logo = f'''<img style="width:width:{img_width};" src="{package_obj["logo"]}" {img_style} alt="{name}"/>'''
+        package_src = ''
+        package_dev_ref = ''
+        if package_logo != '':
+            package_src = f'src="{package_logo}"'
+        logo = f'''<img style="width:width:{img_width};" {package_src} {img_style} alt="{name}"/>'''
+        if package_dev != '':
+            package_dev_ref = f'''href="{package_dev}"'''
         td = f'''
     <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
         {package_obj.get("type","")}
     </td>
     <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
-        <a aria-label="{name}" href="{package_obj.get("dev","")}">
+        <a aria-label="{name}" {package_dev_ref}>
             {logo}
         </a>
     </td>
