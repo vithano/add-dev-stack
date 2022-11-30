@@ -632,7 +632,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
             img_style = ''
         logo = name.capitalize()
         if package_obj.get('logo','') != '':
-            logo = f'''<img width="{img_width};" src={package_obj["logo"]} {img_style} alt={name}/>'''
+            logo = f'''<img style="width:width:{img_width};" src="{package_obj["logo"]}" {img_style} alt="{name}"/>'''
         td = f'''
     <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
         {package_obj.get("type","")}
@@ -644,7 +644,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
     </td>
     <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/{name}">
-            <img src={version} {img_style} alt={name}/>
+            <img src="{version}" {img_style} alt="{name}"/>
         </a>
     </td>
 
