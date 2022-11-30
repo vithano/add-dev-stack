@@ -112,12 +112,12 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="pnpm" href="https://pnpm.io">
-            <img width="100;" src=https://user-images.githubusercontent.com/4253088/196271039-0b998d0d-5867-47bf-a627-e36825175aeb.png  alt=pnpm/>
+            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196271039-0b998d0d-5867-47bf-a627-e36825175aeb.png"  alt="pnpm"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/pnpm">
-            <img src=https://img.shields.io/badge/7.14.2-brightgreen  alt=pnpm/>
+            <img src="https://img.shields.io/badge/7.14.2-brightgreen"  alt="pnpm"/>
         </a>
     </td>
 
@@ -134,7 +134,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/dotenv">
-            <img src=https://img.shields.io/badge/16.0.3-brightgreen  alt=dotenv/>
+            <img src="https://img.shields.io/badge/16.0.3-brightgreen"  alt="dotenv"/>
         </a>
     </td>
 
@@ -146,12 +146,12 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="tailwindcss" href="https://tailwindcss.com/docs/installation">
-            <img width="100;" src=https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png  alt=tailwindcss/>
+            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png"  alt="tailwindcss"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/tailwindcss">
-            <img src=https://img.shields.io/badge/3.2.1-brightgreen  alt=tailwindcss/>
+            <img src="https://img.shields.io/badge/3.2.1-brightgreen"  alt="tailwindcss"/>
         </a>
     </td>
 
@@ -168,7 +168,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/tsup">
-            <img src=https://img.shields.io/badge/6.3.0-brightgreen  alt=tsup/>
+            <img src="https://img.shields.io/badge/6.3.0-brightgreen"  alt="tsup"/>
         </a>
     </td>
 
@@ -185,7 +185,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/typescript">
-            <img src=https://img.shields.io/badge/4.8.4-brightgreen  alt=typescript/>
+            <img src="https://img.shields.io/badge/4.8.4-brightgreen"  alt="typescript"/>
         </a>
     </td>
 
@@ -202,7 +202,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/vite">
-            <img src=https://img.shields.io/badge/3.1.8-brightgreen  alt=vite/>
+            <img src="https://img.shields.io/badge/3.1.8-brightgreen"  alt="vite"/>
         </a>
     </td>
 
@@ -219,7 +219,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/zod">
-            <img src=https://img.shields.io/badge/3.19.1-brightgreen  alt=zod/>
+            <img src="https://img.shields.io/badge/3.19.1-brightgreen"  alt="zod"/>
         </a>
     </td>
 
@@ -236,7 +236,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@faker-js/faker">
-            <img src=https://img.shields.io/badge/7.6.0-brightgreen  alt=@faker-js/faker/>
+            <img src="https://img.shields.io/badge/7.6.0-brightgreen"  alt="@faker-js/faker"/>
         </a>
     </td>
 
@@ -253,7 +253,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@ladle/react">
-            <img src=https://img.shields.io/badge/2.4.5-brightgreen  alt=@ladle/react/>
+            <img src="https://img.shields.io/badge/2.4.5-brightgreen"  alt="@ladle/react"/>
         </a>
     </td>
 
@@ -270,7 +270,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@storybook/react">
-            <img src=https://img.shields.io/badge/6.5.13-brightgreen  alt=@storybook/react/>
+            <img src="https://img.shields.io/badge/6.5.13-brightgreen"  alt="@storybook/react"/>
         </a>
     </td>
 
@@ -287,7 +287,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@testing-library/jest-dom">
-            <img src=https://img.shields.io/badge/5.16.5-brightgreen  alt=@testing-library/jest-dom/>
+            <img src="https://img.shields.io/badge/5.16.5-brightgreen"  alt="@testing-library/jest-dom"/>
         </a>
     </td>
 
@@ -299,12 +299,12 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="@testing-library/react" href="https://testing-library.com/docs/react-testing-library/intro/">
-            <img width="100;" src=https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png  alt=@testing-library/react/>
+            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png"  alt="@testing-library/react"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@testing-library/react">
-            <img src=https://img.shields.io/badge/13.4.0-brightgreen  alt=@testing-library/react/>
+            <img src="https://img.shields.io/badge/13.4.0-brightgreen"  alt="@testing-library/react"/>
         </a>
     </td>
 
@@ -321,7 +321,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@tsconfig/next">
-            <img src=https://img.shields.io/badge/1.0.3-brightgreen  alt=@tsconfig/next/>
+            <img src="https://img.shields.io/badge/1.0.3-brightgreen"  alt="@tsconfig/next"/>
         </a>
     </td>
 
@@ -338,7 +338,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@tsconfig/node18">
-            <img src=https://img.shields.io/badge/1.0.1-brightgreen  alt=@tsconfig/node18/>
+            <img src="https://img.shields.io/badge/1.0.1-brightgreen"  alt="@tsconfig/node18"/>
         </a>
     </td>
 
@@ -355,7 +355,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@tsconfig/vite-react">
-            <img src=https://img.shields.io/badge/1.0.1-brightgreen  alt=@tsconfig/vite-react/>
+            <img src="https://img.shields.io/badge/1.0.1-brightgreen"  alt="@tsconfig/vite-react"/>
         </a>
     </td>
 
@@ -372,7 +372,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@types/node">
-            <img src=https://img.shields.io/badge/17.0.45-brightgreen  alt=@types/node/>
+            <img src="https://img.shields.io/badge/17.0.45-brightgreen"  alt="@types/node"/>
         </a>
     </td>
 
@@ -389,7 +389,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@types/react">
-            <img src=https://img.shields.io/badge/18.0.22-brightgreen  alt=@types/react/>
+            <img src="https://img.shields.io/badge/18.0.22-brightgreen"  alt="@types/react"/>
         </a>
     </td>
 
@@ -406,7 +406,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@types/react-dom">
-            <img src=https://img.shields.io/badge/18.0.7-brightgreen  alt=@types/react-dom/>
+            <img src="https://img.shields.io/badge/18.0.7-brightgreen"  alt="@types/react-dom"/>
         </a>
     </td>
 
@@ -423,7 +423,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@vitejs/plugin-react">
-            <img src=https://img.shields.io/badge/2.1.0-brightgreen  alt=@vitejs/plugin-react/>
+            <img src="https://img.shields.io/badge/2.1.0-brightgreen"  alt="@vitejs/plugin-react"/>
         </a>
     </td>
 
@@ -440,7 +440,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/autoprefixer">
-            <img src=https://img.shields.io/badge/10.4.12-brightgreen  alt=autoprefixer/>
+            <img src="https://img.shields.io/badge/10.4.12-brightgreen"  alt="autoprefixer"/>
         </a>
     </td>
 
@@ -457,7 +457,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/eslint-config-prettier">
-            <img src=https://img.shields.io/badge/8.5.0-brightgreen  alt=eslint-config-prettier/>
+            <img src="https://img.shields.io/badge/8.5.0-brightgreen"  alt="eslint-config-prettier"/>
         </a>
     </td>
 
@@ -474,7 +474,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/happy-dom">
-            <img src=https://img.shields.io/badge/7.6.4-brightgreen  alt=happy-dom/>
+            <img src="https://img.shields.io/badge/7.6.4-brightgreen"  alt="happy-dom"/>
         </a>
     </td>
 
@@ -491,7 +491,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/husky">
-            <img src=https://img.shields.io/badge/8.0.1-brightgreen  alt=husky/>
+            <img src="https://img.shields.io/badge/8.0.1-brightgreen"  alt="husky"/>
         </a>
     </td>
 
@@ -508,7 +508,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/lint-staged">
-            <img src=https://img.shields.io/badge/13.0.3-brightgreen  alt=lint-staged/>
+            <img src="https://img.shields.io/badge/13.0.3-brightgreen"  alt="lint-staged"/>
         </a>
     </td>
 
@@ -525,7 +525,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/postcss">
-            <img src=https://img.shields.io/badge/8.4.18-brightgreen  alt=postcss/>
+            <img src="https://img.shields.io/badge/8.4.18-brightgreen"  alt="postcss"/>
         </a>
     </td>
 
@@ -542,7 +542,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/prettier">
-            <img src=https://img.shields.io/badge/2.7.1-brightgreen  alt=prettier/>
+            <img src="https://img.shields.io/badge/2.7.1-brightgreen"  alt="prettier"/>
         </a>
     </td>
 
@@ -559,7 +559,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/prettier-plugin-tailwindcss">
-            <img src=https://img.shields.io/badge/0.1.13-brightgreen  alt=prettier-plugin-tailwindcss/>
+            <img src="https://img.shields.io/badge/0.1.13-brightgreen"  alt="prettier-plugin-tailwindcss"/>
         </a>
     </td>
 
@@ -576,7 +576,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/ts-node-dev">
-            <img src=2.0.0  alt=ts-node-dev/>
+            <img src="2.0.0"  alt="ts-node-dev"/>
         </a>
     </td>
 
@@ -588,12 +588,12 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="turbo" href="https://turborepo.org/docs">
-            <img width="100;" src=https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png  alt=turbo/>
+            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png"  alt="turbo"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/turbo">
-            <img src=1.6.3  alt=turbo/>
+            <img src="1.6.3"  alt="turbo"/>
         </a>
     </td>
 
@@ -605,12 +605,12 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="vitest" href="https://vitest.dev/">
-            <img width="100;" src=https://user-images.githubusercontent.com/4253088/196270525-cea1d088-d329-4dba-879d-5e48ef779544.png  alt=vitest/>
+            <img style="width:width:100;" src="https://user-images.githubusercontent.com/4253088/196270525-cea1d088-d329-4dba-879d-5e48ef779544.png"  alt="vitest"/>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/vitest">
-            <img src=0.25.3  alt=vitest/>
+            <img src="0.25.3"  alt="vitest"/>
         </a>
     </td>
 
