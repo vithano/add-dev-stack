@@ -112,15 +112,23 @@ class GithubWrite:
                     name = dep.split(':')[0].strip().replace('"', '').replace("'", '')
                     version = re.sub(pattern, '', version)
                     if(self.PACKAGES_TO_SHOW == 'all'):
+                        obj = map_package_to_framework_type(name)
                         all_deps.append({
                             'name': name,
                             'version': version
+                            'type': obj.get('type','')
+                            'dev': obj.get('dev','')
+                            'logo': obj.get('logo','')
                         })
                     else:
                         if name in self.PACKAGES_TO_SHOW:
+                            obj = map_package_to_framework_type(name)
                             all_deps.append({
                                 'name': name,
                                 'version': version
+                                'type': obj.get('type','')
+                                'dev': obj.get('dev','')
+                                'logo': obj.get('logo','')
                             })
         return all_deps
     def order_dev_stack_data(self,dev_stack_data):
@@ -654,12 +662,11 @@ def generate_dev_stack_table(dev_stack_data, img_width,
     cell_width = 1.5 * img_width
     cell_height = 1.5 * img_width
     for package in dev_stack_data:
-        name = package['name']
-        version = package['version']
-        package_obj = map_package_to_framework_type(name)
-        package_type = package_obj.get('type', '')
-        package_logo = package_obj.get('logo', '')
-        package_dev = package_obj.get('dev', '')
+        name = package.get('name','')
+        version = package.get('version')
+        package_type = package.get('type', '')
+        package_logo = package.get('logo', '')
+        package_dev = package.get('dev', '')
         if package_type == '':
             continue
         # fetch latest version from unpkg
@@ -699,7 +706,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
             package_dev_ref = f'href="{package_dev}"'
         td = f'''
     <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
-        {package_obj.get("type","")}
+        {package_type}
     </td>
     <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
         <a aria-label="{name}" {package_dev_ref}>
