@@ -612,6 +612,11 @@ def map_package_to_framework_type(package_name):
         'lint-staged': {
             'type': 'Lint',
             'logo': ''
+        },
+        '@ladle/react': {
+            'type': 'Testing Components',
+            'logo': 'https://user-images.githubusercontent.com/4253088/196270689-6216be78-82a5-4800-b3ee-81fe47792360.png',
+            'dev': ''
         }
     }
     return packages_map.get(package_name, {})
