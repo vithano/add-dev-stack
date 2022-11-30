@@ -128,9 +128,9 @@ class GithubWrite:
         packageJson = self.repo.get_contents('package.json')
         print('[DEBUG]All dev stack\' names:')
         
-        dev_stack_data = self.find_deps(packageJson)
+        my_dev_stack = self.find_deps(packageJson)
 
-        for package in dev_stack_data:
+        for package in my_dev_stack:
             name = package["name"]
             version = package["version"]
             print(f'[DEBUG]{name}:{version}')
@@ -598,6 +598,12 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         name = package['name']
         version = package['version']
         package_obj = map_package_to_framework_type(name)
+        package_type = package_obj.get('type', '')
+        package_logo = package_obj.get('logo', '')
+        package_dev = package_obj.get('dev', '')
+        print(package_logo)
+        print(package_dev)
+        print(package_type)
         # fetch latest version from unpkg
         try:
             response = requests.get(f'https://unpkg.com/{name}/package.json').raise_for_status()
