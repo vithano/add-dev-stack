@@ -158,14 +158,20 @@ class GithubWrite:
         my_dev_stack = self.find_deps(packageJson)
         my_dev_stack = self.order_dev_stack_data(my_dev_stack)
         for package in my_dev_stack:
-            name = package["name"]
-            version = package["version"]
+            name = package.get('name','')
+            version = package.get('version')
+            package_type = package.get('type', '')
+            package_logo = package.get('logo', '')
+            package_dev = package.get('dev', '')
             print(f'[DEBUG]{name}:{version}')
             if re.match('apps/', name):
                 continue
             self.dev_stack_data.append({
                 'name': name,
                 'version': version,
+                'type': package_type,
+                'logo': package_logo,
+                'dev': package_dev
             })
         # get file content
         contents = self.repo.get_contents(self.PATH, self.BRANCH)
