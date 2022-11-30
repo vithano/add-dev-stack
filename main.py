@@ -622,33 +622,34 @@ def generate_dev_stack_table(dev_stack_data, img_width,
             elif version[0] - latest_version[0] > 1:
                 version = f'https://img.shields.io/badge/{version}-red'
         except:
+            version = f'https://img.shields.io/badge/{version}-brightgreen'
             continue
-            new_tr = '''\n</tr>\n<tr>'''
-            HEAD = HEAD + new_tr
-            if shape == 'round':
-                img_style = ' style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px"'
-            else:
-                img_style = ''
-            logo = name.capitalize()
-            if package_obj.get('logo','') != '':
-                logo = f'''<img width="{img_width};" src={package_obj["logo"]} {img_style} alt={name}/>'''
-            td = f'''
-        <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
-            {package_obj.get("type","")}
-        </td>
-        <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
-            <a aria-label="{name}" href="{package_obj.get("dev","")}">
-                {logo}
-            </a>
-        </td>
-        <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
-            <a aria-label="NPM Version" href="https://www.npmjs.com/package/{name}">
-                <img src={version} {img_style} alt={name}/>
-            </a>
-        </td>
+        new_tr = '''\n</tr>\n<tr>'''
+        HEAD = HEAD + new_tr
+        if shape == 'round':
+            img_style = ' style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px"'
+        else:
+            img_style = ''
+        logo = name.capitalize()
+        if package_obj.get('logo','') != '':
+            logo = f'''<img width="{img_width};" src={package_obj["logo"]} {img_style} alt={name}/>'''
+        td = f'''
+    <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
+        {package_obj.get("type","")}
+    </td>
+    <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
+        <a aria-label="{name}" href="{package_obj.get("dev","")}">
+            {logo}
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/{name}">
+            <img src={version} {img_style} alt={name}/>
+        </a>
+    </td>
 
-        '''
-            HEAD = HEAD + td
+    '''
+        HEAD = HEAD + td
         
     HEAD = HEAD + TAIL
     return HEAD
