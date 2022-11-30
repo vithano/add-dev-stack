@@ -623,7 +623,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
             logo = f'''<img width="{img_width};" src={package_obj["logo"]} {img_style} alt={name}/>'''
         td = f'''
     <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
-        {package_obj["type"]}
+        {package_obj.get("type","")}
     </td>
     <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
         <a aria-label="{name}" href="{package_obj.get("dev","")}">
