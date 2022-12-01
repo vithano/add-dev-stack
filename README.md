@@ -117,7 +117,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/pnpm">
-            <img src="https://img.shields.io/badge/7.14.2-brightgreen"  alt="pnpm"/>
+            <img src="https://img.shields.io/badge/6.14.2-brightgreen"  alt="pnpm"/>
         </a>
     </td>
 
@@ -202,7 +202,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/storybook">
-            <img src="https://img.shields.io/badge/7.0.0alpha.54-brightgreen"  alt="storybook"/>
+            <img src="https://img.shields.io/badge/6-brightgreen"  alt="storybook"/>
         </a>
     </td>
 
