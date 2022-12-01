@@ -653,18 +653,16 @@ def generate_dev_stack_table(dev_stack_data, img_width,
             
             if response.status_code != 204:
                 json = response.json()
-                print(json)
-            if 'version' in json:
-                latest_version = json['version']
+                latest_version = json.get('version','')
             else:
                 latest_version = version
             if version == 'latest':
                 version = latest_version
-            if version[0] == latest_version[0]:
+            if int(version[0]) == int(latest_version[0]):
                 version = f'https://img.shields.io/badge/{version}-brightgreen'
-            elif version[0] - latest_version[0] == 1:
+            elif int(version[0]) - int(latest_version[0]) == 1:
                 version = f'https://img.shields.io/badge/{version}-yellow'
-            elif version[0] - latest_version[0] > 1:
+            elif int(version[0]) - int(latest_version[0]) > 1:
                 version = f'https://img.shields.io/badge/{version}-red'
         except:
             version = f'https://img.shields.io/badge/{version}-brightgreen'
