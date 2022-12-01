@@ -50,7 +50,7 @@
       "@storybook/react": "7.0.0-alpha.54",
       "@storybook/react-vite": "7.0.0-alpha.54",
       "@storybook/testing-library": "0.0.13",
-      "storybook": "6"
+      "storybook": "5"
     },
     "engines": {
       "node": ">=16.0.0"
