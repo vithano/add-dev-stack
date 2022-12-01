@@ -1,9 +1,27 @@
 {
+    "name": "fullpower-stack",
+    "version": "0.0.0",
+    "private": true,
+    "description": "a boiler plate for a cutting edge technologies",
+    "author": "Pavel 'PK' Kaminsky",
+    "license": "MIT",
+    "workspaces": [
+      "apps/*",
+      "packages/*"
+    ],
+    "scripts": {
+      "build": "turbo run build",
+      "dev": "turbo run dev --parallel --no-cache",
+      "dev:vite": "turbo run dev --parallel --no-cache --filter=@fullpower-stack/vite --filter=@fullpower-stack/express-backend",
+      "test": "turbo run test",
+      "test:watch": "turbo run test:watch",
+      "lint": "turbo run lint -- --fix --cache",
+      "format": "prettier --write \"**/*.{ts,tsx,md}\" --cache",
+      "prepare": "husky install"
+    },
     "devDependencies": {
       "@faker-js/faker": "^7.6.0",
       "@fullpower-stack/eslint-config-custom": "workspace:*",
-      "@ladle/react": "^2.4.5",
-      "@storybook/react": "^6.5.13",
       "@testing-library/jest-dom": "^5.16.5",
       "@testing-library/react": "^13.4.0",
       "@tsconfig/next": "^1.0.3",
@@ -24,7 +42,18 @@
       "prettier-plugin-tailwindcss": "^0.1.13",
       "ts-node-dev": "latest",
       "turbo": "latest",
-      "vitest": "latest"
+      "vitest": "latest",
+      "@storybook/addon-essentials": "7.0.0-alpha.54",
+      "@storybook/addon-interactions": "7.0.0-alpha.54",
+      "@storybook/addon-links": "7.0.0-alpha.54",
+      "@storybook/addon-postcss": "^2.0.0",
+      "@storybook/react": "7.0.0-alpha.54",
+      "@storybook/react-vite": "7.0.0-alpha.54",
+      "@storybook/testing-library": "0.0.13",
+      "storybook": "7.0.0-alpha.54"
+    },
+    "engines": {
+      "node": ">=16.0.0"
     },
     "dependencies": {
       "dotenv": "^16.0.3",
@@ -34,6 +63,9 @@
       "vite": "^3.1.8",
       "zod": "^3.19.1"
     },
-    
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/kaminskypavel/fullpower-stack.git"
+    },
     "packageManager": "pnpm@7.14.2"
   }

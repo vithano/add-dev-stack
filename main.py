@@ -89,9 +89,14 @@ class GithubWrite:
         package_manager_version = package_manager.split('@')[1]
         package_manager_name = package_manager.split('@')[0]
         if self.PACKAGES_TO_SHOW == 'all' or package_manager_name in self.PACKAGES_TO_SHOW:
+            obj = map_package_to_framework_type(package_manager_name)
             all_deps.append({
                 'name': package_manager_name,
-                'version': re.sub(pattern, '', package_manager_version)
+                'version': re.sub(pattern, '', package_manager_version),
+                'type': obj.get('type',''),
+                'dev': obj.get('dev',''),
+                'logo': obj.get('logo','')
+                
             })
         dependency_types = ['dependencies', 'devDependencies']
         # get all dependencies and devDependencies from package.json file
@@ -542,41 +547,6 @@ def map_package_to_framework_type(package_name):
             'type': 'Component library',
             'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
             'dev': 'https://storybook.js.org/docs/react/get-started/introduction'
-        },
-        '@storybook/react': {
-            'type': 'Component library',
-            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
-            'dev': 'https://storybook.js.org/docs/react/get-started/introduction'
-        },
-        '@storybook/vue': {
-            'type': 'Component library',
-            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
-            'dev': 'https://storybook.js.org/docs/vue/get-started/introduction'
-        },
-        '@storybook/angular': {
-            'type': 'Component library',
-            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
-            'dev': 'https://storybook.js.org/docs/angular/get-started/introduction'
-        },
-        '@storybook/svelte': {
-            'type': 'Component library',
-            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
-            'dev': 'https://storybook.js.org/docs/svelte/get-started/introduction'
-        },
-        '@storybook/html': {
-            'type': 'Component library',
-            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
-            'dev': 'https://storybook.js.org/docs/html/get-started/introduction'
-        },
-        '@storybook/addon-docs': {
-            'type': 'Component library',
-            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
-            'dev': 'https://storybook.js.org/docs/react/writing-docs/introduction'
-        },
-        '@storybook/addon-controls': {
-            'type': 'Component library',
-            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-',
-            'dev': 'https://storybook.js.org/docs/react/essentials/controls'
         },
         'react-styleguidist': {
             'type': 'Component library',
