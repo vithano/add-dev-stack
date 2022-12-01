@@ -639,7 +639,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
     cell_height = 1.5 * img_width
     for package in dev_stack_data:
         name = package.get('name','')
-        version = package.get('version')
+        version = package.get('version','')
         package_type = package.get('type', '')
         package_logo = package.get('logo', '')
         package_dev = package.get('dev', '')
@@ -664,6 +664,9 @@ def generate_dev_stack_table(dev_stack_data, img_width,
                 version = f'https://img.shields.io/badge/{version}-yellow'
             elif int(version[0]) - int(latest_version[0]) > 1:
                 version = f'https://img.shields.io/badge/{version}-red'
+            print(version)
+            print(latest_version)
+
         except:
             version = f'https://img.shields.io/badge/{version}-brightgreen'
         new_tr = '''\n</tr>\n<tr>'''
