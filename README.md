@@ -202,7 +202,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/storybook">
-            <img src="https://img.shields.io/badge/5-yellow"  alt="storybook"/>
+            <img src="https://img.shields.io/badge/4-red"  alt="storybook"/>
         </a>
     </td>
 
