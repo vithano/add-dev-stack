@@ -253,7 +253,7 @@ optional arguments:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/lint-staged">
-            <img src="https://img.shields.io/badge/13.0.3-brightgreen"  alt="lint-staged"/>
+            <img src="https://img.shields.io/badge/12.0.3-brightgreen"  alt="lint-staged"/>
         </a>
     </td>
 
