@@ -662,10 +662,10 @@ def generate_dev_stack_table(dev_stack_data, img_width,
                 version = f'https://img.shields.io/badge/{version}-brightgreen'
             elif int(version[0]) - int(latest_version[0]) == 1:
                 version = f'https://img.shields.io/badge/{version}-yellow'
-            elif int(version[0]) - int(latest_version[0]) > 1:
+            elif int(latest_version[0]) - int(version[0]) > 1:
                 version = f'https://img.shields.io/badge/{version}-red'
-            print(version)
-            print(latest_version)
+            else:
+                version = f'https://img.shields.io/badge/{version}-brightgreen'
 
         except:
             version = f'https://img.shields.io/badge/{version}-brightgreen'
