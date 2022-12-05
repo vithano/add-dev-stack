@@ -236,372 +236,438 @@ def map_package_to_framework_type(package_name):
     packages_map = {
         'pnpm': {
             'type': 'Package manager',
-            'logo': 'https://user-images.githubusercontent.com/4253088/196271039-0b998d0d-5867-47bf-a627-e36825175aeb.png',
+            'logo': 'https://avatars.githubusercontent.com/u/21320719?s=200&v=4',
             'dev': 'https://pnpm.io'
         },
         'npm': {
             'type': 'Package manager',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/6078720?s=200&v=4',
+            'dev': 'https://www.npmjs.com/'
         },
         'yarn': {
             'type': 'Package manager',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/22247014?s=200&v=4',
+            'dev': 'https://yarnpkg.com/'
         },
         'webpack': {
             'type': 'Bundler',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/2105791?s=200&v=4',
+            'dev': 'https://webpack.js.org/'
         },
         'babel': {
             'type': 'Bundler',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/9637642?s=200&v=4',
+            'dev': 'https://babeljs.io/'
         },
         'gulp': {
             'type': 'Bundler',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/6200624?s=200&v=4',
+            'dev': 'https://gulpjs.com/'
         },
         'grunt': {
             'type': 'Bundler',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/1630826?s=200&v=4',
+            'dev': 'https://gruntjs.com/'
         },
         'rollup': {
             'type': 'Bundler',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/12554859?s=200&v=4',
+            'dev': 'https://rollupjs.org/'
         },
         'parcel': {
             'type': 'Bundler',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/32607881?s=200&v=4',
+            'dev': 'https://parceljs.org/'
         },
         'jest': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png',
+            'dev': 'https://jestjs.io/'
         },
         'mocha': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/8770005?s=200&v=4',
+            'dev': 'https://mochajs.org/'
         },
         'jasmine': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/4624349?s=200&v=4',
+            'dev': 'https://jasmine.github.io/'
         },
         'karma': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/3284117?s=200&v=4',
+            'dev': 'https://karma-runner.github.io/latest/index.html'
         },
         'nightwatch': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/12559275?s=200&v=4',
+            'dev': 'https://nightwatchjs.org/'
         },
         'react': {
-            'type': 'Frontend Framework',
-            'logo': ''
+            'type': 'UI Library',
+            'logo': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png',
+            'dev': 'https://reactjs.org/'
         },
         'vue': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/6128107?s=200&v=4',
+            'dev': 'https://vuejs.org/'
         },
-        'angular': {
+        '@angular/core': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/139426?s=200&v=4',
+            'dev': 'https://angular.io/'
         },
-        'ember': {
+        'emberjs': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/1253363?s=200&v=4',
+            'dev': 'https://emberjs.com/'
         },
         'svelte': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/23617963?s=200&v=4',
+            'dev': 'https://svelte.dev/'
         },
         'lit-element': {
-            'type': 'Frontend Framework',
-            'logo': ''
+            'type': 'UI Library',
+            'logo': 'https://avatars.githubusercontent.com/u/18489846?s=200&v=4',
+            'dev': 'https://lit-element.polymer-project.org/'
         },
         'lit-html': {
-            'type': 'Frontend Framework',
-            'logo': ''
+            'type': 'UI Library',
+            'logo': 'https://avatars.githubusercontent.com/u/18489846?s=200&v=4',
+            'dev': 'https://lit-html.polymer-project.org/'
         },
         'preact': {
-            'type': 'Frontend Framework',
-            'logo': ''
+            'type': 'UI Library',
+            'logo': 'https://avatars.githubusercontent.com/u/26872990?s=200&v=4',
+            'dev': 'https://preactjs.com/'
         },
         'riot': {
-            'type': 'Frontend Framework',
-            'logo': ''
+            'type': 'UI Library',
+            'logo': 'https://avatars.githubusercontent.com/u/12729373?s=200&v=4',
+            'dev': 'https://riot.js.org/'
         },
         'marko': {
-            'type': 'Frontend Framework',
-            'logo': ''
+            'type': 'Frontend Language',
+            'logo': 'https://avatars.githubusercontent.com/u/11873696?s=200&v=4',
+            'dev': 'https://markojs.com/'
         },
         'hyperapp': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://miro.medium.com/max/828/1*o1Lyd3SKXAn6y3hHKB7jCg.webp',
+            'dev': 'https://hyperapp.dev/'
         },
         'mithril': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/19475707?s=200&v=4',
+            'dev': 'https://mithril.js.org/'
         },
-        'polymer': {
-            'type': 'Frontend Framework',
-            'logo': ''
+        '@polymer/polymer': {
+            'type': 'UI Library',
+            'logo': 'https://avatars.githubusercontent.com/u/2159051?s=200&v=4',
+            'dev': 'https://www.polymer-project.org/'
         },
-        'apollo': {
+        '@apollo/client': {
             'type': 'GraphQL',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/17189275?s=200&v=4',
+            'dev': 'https://www.apollographql.com/docs/react/'
         },
         'graphql': {
             'type': 'GraphQL',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/12972006?s=200&v=4',
+            'dev': 'https://graphql.org/'
         },
-        'relay': {
+        'relay-runtime': {
             'type': 'GraphQL',
-            'logo': ''
+            'logo': 'https://relay.dev/img/relay.svg',
+            'dev': 'https://relay.dev/'
         },
         'turbo': {
             'type': 'Monorepo manager',
-            'logo': 'https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png',
+            'logo': 'https://user-images.githubusercontent.com/4060187/196936104-5797972c-ab10-4834-bd61-0d1e5f442c9c.png',
             'dev': 'https://turborepo.org/docs'
         },
         'lerna': {
             'type': 'Monorepo manager',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/19333396?s=200&v=4',
+            'dev': 'https://lerna.js.org/'
         },
         'nx': {
             'type': 'Monorepo manager',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/23692104?s=200&v=4',
+            'dev': 'https://nx.dev/'
         },
-        'rush': {
+        '@microsoft/rush': {
             'type': 'Monorepo manager',
-            'logo': ''
-        },
-        'pnpm-workspace': {
-            'type': 'Monorepo manager',
-            'logo': ''
+            'logo': 'https://github.com/microsoft/rushstack/raw/main/common/wiki-images/rush-logo.png?raw=true',
+            'dev': 'https://rushjs.io/pages/intro/welcome/'
         },
         'tailwindcss': {
             'type': 'CSS Framework',
-            'logo': 'https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png',
+            'logo': 'https://avatars.githubusercontent.com/u/67109815?s=200&v=4',
             'dev':'https://tailwindcss.com/docs/installation'
         },
         'bootstrap': {
             'type': 'CSS Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/2918581?s=200&v=4',
+            'dev': 'https://getbootstrap.com/docs/5.0/getting-started/introduction/'
         },
         'bulma': {
             'type': 'CSS Framework',
-            'logo': ''
+            'logo': 'https://raw.githubusercontent.com/github/explore/ad9cd7e959a88047c830c3a9cc4e9ffcf5e644f7/topics/bulma/bulma.png',
+            'dev': 'https://bulma.io/documentation/'
         },
-        'material-ui': {
-            'type': 'CSS Framework',
-            'logo': ''
+        '@mui/material': {
+            'type': 'UI Library',
+            'logo': 'https://avatars.githubusercontent.com/u/33663932?s=200&v=4',
+            'dev': 'https://mui.com/getting-started/usage/'
         },
-        'ant-design': {
-            'type': 'CSS Framework',
-            'logo': ''
+        'antd': {
+            'type': 'UI Library',
+            'logo': 'https://avatars.githubusercontent.com/u/12101536?s=200&v=4',
+            'dev': 'https://ant.design/docs/react/introduce'
         },
         'element-ui': {
-            'type': 'CSS Framework',
-            'logo': ''
+            'type': 'UI Library',
+            'logo': 'https://avatars.githubusercontent.com/u/12810740?s=200&v=4',
+            'dev': 'https://element.eleme.io/#/en-US'
         },
         'vuetify': {
             'type': 'CSS Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/22138497?s=200&v=4',
+            'dev': 'https://vuetifyjs.com/en/getting-started/installation/'
         },
         '@trpc/server': {
             'type': 'Server-client communication',
-            'logo': 'https://trpc.io/img/logo-text-black.svg',
+            'logo': 'https://avatars.githubusercontent.com/u/78011399?s=200&v=4',
             'dev': 'https://trpc.io/docs'
         },
         'next': {
             'type': 'Frontend Framework',
-            'logo': 'https://user-images.githubusercontent.com/4253088/196269841-32444c2d-7798-471d-8c7d-455323680297.png',
+            'logo': 'https://camo.githubusercontent.com/f21f1fa29dfe5e1d0772b0efe2f43eca2f6dc14f2fede8d9cbef4a3a8210c91d/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313636323133303535392f6e6578746a732f49636f6e5f6c696768745f6261636b67726f756e642e706e67',
             'dev': 'https://nextjs.org/docs/getting-started'
         },
         'express': {
             'type': 'Backend Framework',
-            'logo': 'https://camo.githubusercontent.com/0566752248b4b31b2c4bdc583404e41066bd0b6726f310b73e1140deefcc31ac/68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67',
+            'logo': 'https://avatars.githubusercontent.com/u/5658226?s=200&v=4',
             'dev': 'https://expressjs.com/'
         },
         'koa': {
             'type': 'Backend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/5055057?s=200&v=4',
+            'dev': 'https://koajs.com/'
         },
         'hapi': {
             'type': 'Backend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/3774533?s=200&v=4',
+            'dev': 'https://hapi.dev/'
         },
         'fastify': {
             'type': 'Backend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/24939410?s=200&v=4',
+            'dev': 'https://www.fastify.io/'
         },
-        'nest': {
+        '@nestjs/core': {
             'type': 'Backend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/28507035?s=200&v=4',
+            'dev': 'https://docs.nestjs.com/'
         },
         'sapper': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/23617963?s=200&v=4',
+            'dev': 'https://sapper.svelte.dev/docs'
         },
-        'svelte-kit': {
+        '@sveltejs/kit': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/23617963?s=200&v=4',
+            'dev': 'https://kit.svelte.dev/docs'
         },
         'strapi': {
             'type': 'Backend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/19872173?s=200&v=4',
+            'dev': 'https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html'
         },
         'nuxt': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/23360933?s=200&v=4',
+            'dev': 'https://nuxtjs.org/docs/2.x/get-started/installation'
         },
         'gatsby': {
             'type': 'Frontend Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/12551863?s=200&v=4',
+            'dev': 'https://www.gatsbyjs.com/docs/'
         },
         'react-native': {
             'type': 'Mobile Framework',
-            'logo': ''
-        },
-        'flutter': {
-            'type': 'Mobile Framework',
-            'logo': ''
+            'logo': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png',
+            'dev': 'https://reactnative.dev/docs/getting-started'
         },
         'ionic': {
             'type': 'Mobile Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/3171503?s=200&v=4',
+            'dev': 'https://ionicframework.com/docs'
+        },
+        '@ionic/cli': {
+            'type': 'Mobile Framework',
+            'logo': 'https://avatars.githubusercontent.com/u/3171503?s=200&v=4',
+            'dev': 'https://ionicframework.com/docs/cli'
         },
         'cordova': {
             'type': 'Mobile Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/47359?s=200&v=4',
+            'dev': 'https://cordova.apache.org/docs/en/latest/'
         },
         'expo': {
             'type': 'Mobile Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/12504344?s=200&v=4',
+            'dev': 'https://docs.expo.io/'
         },
-        'native-script': {
+        'nativescript': {
             'type': 'Mobile Framework',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/7392261?s=200&v=4',
+            'dev': 'https://docs.nativescript.org/'
         },
         'react-native-web': {
             'type': 'Mobile Framework',
-            'logo': ''
+            'logo': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png',
+            'dev': 'https://necolas.github.io/react-native-web/docs/'
         },
         'prisma': {
             'type': 'ORM',
-            'logo': 'https://website-v9.vercel.app/logo-dark.svg',
-            'dev': 'https://prisma.io/'
+            'logo': 'https://avatars.githubusercontent.com/u/17219288?s=200&v=4',
+            'dev': 'https://prisma.io/',
         },
         'typeorm': {
             'type': 'ORM',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/20165699?s=200&v=4',
+            'dev': 'https://typeorm.io/'
         },
         'sequelize': {
             'type': 'ORM',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/3591786?s=200&v=4',
+            'dev': 'https://sequelize.org/'
         },
         'mongoose': {
             'type': 'ORM',
-            'logo': ''
+            'logo': 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png',
+            'dev': 'https://mongoosejs.com/'
         },
         'vitest': {
             'type': 'Test runner',
-            'logo': 'https://user-images.githubusercontent.com/4253088/196270525-cea1d088-d329-4dba-879d-5e48ef779544.png',
+            'logo': 'https://avatars.githubusercontent.com/u/95747107?s=200&v=4',
             'dev': 'https://vitest.dev/'
-        },
-        'react-testing-library': {
-            'type': 'Test runner',
-            'logo': ''
         },
         'jest-circus': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://camo.githubusercontent.com/4ce8c09d94ba2fd16f82fbc8783b3c2738e07b670b1acdd2f6f6ce86ace36297/68747470733a2f2f6a6573746a732e696f2f696d672f6369726375732e706e67',
+            'dev': 'https://jestjs.io/docs/en/configuration#testrunner-string'
         },
         'jest-jasmine2': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png',
+            'dev': 'https://jestjs.io/docs/en/configuration#testrunner-string'
         },
         'jest-mocha': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png',
+            'dev': 'https://jestjs.io/docs/en/configuration#testrunner-string'
         },
         'protractor': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://res.cloudinary.com/practicaldev/image/fetch/s--2j6Ao4pq--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/9tp05j5fpbghqa3f9whz.png',
+            'dev': 'https://www.protractortest.org/#/'
         },
         'cypress': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/8908513?s=200&v=4',
+            'dev': 'https://docs.cypress.io/guides/overview/why-cypress'
         },
         'ava': {
             'type': 'Test runner',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/8527916?s=200&v=4',
+            'dev': 'https://github.com/avajs/ava'
         },
         '@testing-library/react': {
             'type': 'Testing components',
-            'logo': 'https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png',
+            'logo': 'https://avatars.githubusercontent.com/u/49996085?s=200&v=4',
             'dev': 'https://testing-library.com/docs/react-testing-library/intro/'
         },
         'enzyme': {
             'type': 'Testing components',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/698437?s=200&v=4',
+            'dev': 'https://enzymejs.github.io/enzyme/'
         },
         'storybook': {
             'type': 'Component library',
-            'logo': 'https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png',
+            'logo': 'https://avatars.githubusercontent.com/u/22632046?s=200&v=4',
             'dev': 'https://storybook.js.org/docs/react/get-started/introduction'
         },
         'react-styleguidist': {
             'type': 'Component library',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/23550189?s=200&v=4',
+            'dev': 'https://react-styleguidist.js.org/'
         },
         'docz': {
-            'type': 'Component library',
-            'logo': ''
+            'type': 'Documentation',
+            'logo': 'https://avatars.githubusercontent.com/u/39714731?s=200&v=4',
+            'dev': 'https://www.docz.site/'
         },
-        'bit': {
+        '@teambit/bit': {
             'type': 'Component library',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/24789812?s=200&v=4',
+            'dev': 'https://bit.dev/'
         },
         'msw': {
             'type': 'Mocking',
-            'logo': 'https://user-images.githubusercontent.com/11342649/204375767-0075e85e-3602-41d7-a9e7-03c4f8c36f32.png',
+            'logo': 'https://avatars.githubusercontent.com/u/64637271?s=200&v=4',
             'dev': 'https://mswjs.io/docs/'
         },
         'nock': {
             'type': 'Mocking',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/17545810?s=200&v=4',
+            'dev': 'https://github.com/nock/nock#readme'
         },
         'sinon': {
             'type': 'Mocking',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/6570253?s=200&v=4',
+            'dev': 'https://sinonjs.org/'
         },
         'eslint': {
             'type': 'Lint',
-            'logo': '',
+            'logo': 'https://avatars.githubusercontent.com/u/6019716?s=200&v=4',
             'dev': 'https://eslint.org/docs/user-guide/getting-started'
         },
         'prettier': {
             'type': 'Lint',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/25822731?s=200&v=4',
+            'dev': 'https://prettier.io/docs/en/index.html'
         },
         'stylelint': {
             'type': 'Lint',
-            'logo': ''
+            'logo': 'https://avatars.githubusercontent.com/u/10076935?s=200&v=4',
+            'dev': 'https://stylelint.io/user-guide/get-started'
         },
         'tslint': {
             'type': 'Lint',
-            'logo': ''
+            'logo': '',
+            'dev': 'https://palantir.github.io/tslint/'
         },
         'husky': {
             'type': 'Lint',
-            'logo': ''
+            'logo': 'https://res.cloudinary.com/practicaldev/image/fetch/s--3HkALzIp--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v67mrvpgrqg19k3ifgll.png',
+            'dev': 'https://typicode.github.io/husky/'
         },
         'lint-staged': {
             'type': 'Lint',
-            'logo': ''
+            'logo': '',
+            'dev': 'https://github.com/okonet/lint-staged'
         },
         '@ladle/react': {
             'type': 'Testing Components',
-            'logo': 'https://user-images.githubusercontent.com/4253088/196270689-6216be78-82a5-4800-b3ee-81fe47792360.png',
-            'dev': ''
+            'logo': 'https://raw.githubusercontent.com/tajo/ladle/main/packages/website/static/img/logo-gray.svg',
+            'dev': 'https://github.com/tajo/ladle#readme'
         }
     }
     return packages_map.get(package_name, {})
@@ -630,13 +696,13 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         columns = columns.split(',')
     HEAD = f'''<table>
 <tr>
-    <th>{columns[0]}</th>
-    <th>{columns[1]}</th>
-    <th>{columns[2]}</th>
+    <th style="text-align:center;">{columns[0]}</th>
+    <th style="text-align:center;">{columns[1]}</th>
+    <th style="text-align:center;">{columns[2]}</th>
 '''
     TAIL = tail_format
-    cell_width = 1.5 * img_width
-    cell_height = 1.5 * img_width
+    cell_width = str(1.5 * img_width) + 'px'
+    cell_height = str(1.5 * img_width) + 'px'
     for package in dev_stack_data:
         name = package.get('name','')
         version = package.get('version','')
@@ -658,42 +724,47 @@ def generate_dev_stack_table(dev_stack_data, img_width,
                 latest_version = version
             if version == 'latest':
                 version = latest_version
-            if int(version[0]) == int(latest_version[0]):
+            major_version = version.split('.')[0]
+            latest_major_version = latest_version.split('.')[0]
+            if int(latest_major_version) == int(major_version):
                 version = f'https://img.shields.io/badge/{version}-brightgreen'
-            elif int(latest_version[0]) - int(version[0]) == 1:
+            elif int(latest_major_version) - int(major_version) == 1:
                 version = f'https://img.shields.io/badge/{version}-yellow'
-            elif int(latest_version[0]) - int(version[0]) > 1:
+            elif int(latest_major_version) - int(major_version) > 1:
                 version = f'https://img.shields.io/badge/{version}-red'
             else:
                 version = f'https://img.shields.io/badge/{version}-brightgreen'
 
         except:
             version = f'https://img.shields.io/badge/{version}-brightgreen'
-        new_tr = '''\n</tr>\n<tr>'''
+        new_tr = '''\n</tr>\n<tr style="padding-top:10px;">'''
         HEAD = HEAD + new_tr
         if shape == 'round':
-            img_style = ' style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px"'
+            img_style = f'border-radius:50%;align-items:center;justify-content:center;overflow:hidden;'
         else:
             img_style = ''
         logo = name.capitalize()
-        package_src = ''
+        font_style = f'''style="display: inline-flex;align-items: center;padding-top:10px;
+    flex-direction: column; font-size:{str(font_size) + 'px'}"'''
         package_dev_ref = ''
         if package_logo != '':
-            logo = f'''<img style="width:fit-content; height:50px;" src="{package_logo}" {img_style} alt="{name}"/>'''
+            logo = f'''<img style="border-radius:6px;width:{img_width}px;height:{img_width}px; {img_style}" src="{package_logo}" alt="{name}"/>
+                {name}'''
+        cell_style = f'''text-align:center;white-space: nowrap; width: {cell_width}; height: {cell_height}'''
         if package_dev != '':
             package_dev_ref = f'href="{package_dev}"'
         td = f'''
-    <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
+    <td style="{cell_style}">
         {package_type}
     </td>
-    <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
-        <a aria-label="{name}" {package_dev_ref}>
+    <td style="{cell_style}">
+        <a {font_style} aria-label="{name}" {package_dev_ref}>
             {logo}
         </a>
     </td>
-    <td align="center" style="word-wrap: break-word; width: {cell_width}; height: {cell_height}">
+    <td style="{cell_style}">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/{name}">
-            <img src="{version}" {img_style} alt="{name}"/>
+            <img src="{version}" alt="{name}"/>
         </a>
     </td>
 
@@ -760,7 +831,7 @@ def set_env_from_file(file, args, prefix='INPUT'):
                 break
     option_params = [
         'REPO_NAME', 'DEV_STACK', 'ACCESS_TOKEN',
-        'IMG_WIDTH', 'FONT_SIZE', 'PATH', 'COMMIT_MESSAGE', 'AVATAR_SHAPE'
+        'IMG_WIDTH', 'FONT_SIZE', 'PATH', 'COMMIT_MESSAGE', 'AVATAR_SHAPE','PACKAGES_TO_SHOW','TYPES_TO_SHOW','PATH','BRANCH','COLUMNS'
     ]
     for param in option_params:
         if param not in params.keys():
