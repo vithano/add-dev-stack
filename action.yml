@@ -19,11 +19,11 @@ inputs:
   IMG_WIDTH:
     description: "Width of img"
     required: false
-    default: '100'
+    default: '50'
   FONT_SIZE:
     description: "Font size of name (px)"
     required: false
-    default: '14'
+    default: '18'
   PATH:
     description: "Path to the file you want to add contributors' list. You can use <branch>:<file> format to specify the branch"
     required: false
