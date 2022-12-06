@@ -696,9 +696,9 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         columns = columns.split(',')
     HEAD = f'''<table>
 <tr>
-    <th style="text-align:center;">{columns[0]}</th>
-    <th style="text-align:center;">{columns[1]}</th>
-    <th style="text-align:center;">{columns[2]}</th>
+    <th align="center" style="text-align:center;">{columns[0]}</th>
+    <th align="center" style="text-align:center;">{columns[1]}</th>
+    <th align="center" style="text-align:center;">{columns[2]}</th>
 '''
     TAIL = tail_format
     cell_width = str(1.5 * img_width) + 'px'
@@ -749,20 +749,21 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         package_dev_ref = ''
         if package_logo != '':
             logo = f'''<img style="border-radius:6px;width:{img_width}px;height:{img_width}px; {img_style}" src="{package_logo}" alt="{name}"/>
+
                 {name}'''
         cell_style = f'''text-align:center;white-space: nowrap; width: {cell_width}; height: {cell_height}'''
         if package_dev != '':
             package_dev_ref = f'href="{package_dev}"'
         td = f'''
-    <td style="{cell_style}">
+    <td align="center" style="{cell_style}">
         {package_type}
     </td>
-    <td style="{cell_style}">
+    <td align="center" style="{cell_style}">
         <a {font_style} aria-label="{name}" {package_dev_ref}>
             {logo}
         </a>
     </td>
-    <td style="{cell_style}">
+    <td align="center" style="{cell_style}">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/{name}">
             <img src="{version}" alt="{name}"/>
         </a>
