@@ -749,7 +749,7 @@ def generate_dev_stack_table(dev_stack_data, img_width,
         package_dev_ref = ''
         if package_logo != '':
             logo = f'''<img style="border-radius:6px;width:{img_width}px;height:{img_width}px; {img_style}" src="{package_logo}" alt="{name}"/>
-
+                    </br>
                 {name}'''
         cell_style = f'''text-align:center;white-space: nowrap; width: {cell_width}; height: {cell_height}'''
         if package_dev != '':
