@@ -114,7 +114,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="pnpm" href="https://pnpm.io">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/21320719?s=200&v=4" alt="pnpm"/>
-
+                    </br>
                 pnpm
         </a>
     </td>
@@ -134,7 +134,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="turbo" href="https://turborepo.org/docs">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://user-images.githubusercontent.com/4060187/196936104-5797972c-ab10-4834-bd61-0d1e5f442c9c.png" alt="turbo"/>
-
+                    </br>
                 turbo
         </a>
     </td>
@@ -154,7 +154,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="tailwindcss" href="https://tailwindcss.com/docs/installation">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/67109815?s=200&v=4" alt="tailwindcss"/>
-
+                    </br>
                 tailwindcss
         </a>
     </td>
@@ -174,7 +174,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="vitest" href="https://vitest.dev/">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/95747107?s=200&v=4" alt="vitest"/>
-
+                    </br>
                 vitest
         </a>
     </td>
@@ -194,7 +194,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="@testing-library/react" href="https://testing-library.com/docs/react-testing-library/intro/">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/49996085?s=200&v=4" alt="@testing-library/react"/>
-
+                    </br>
                 @testing-library/react
         </a>
     </td>
@@ -214,7 +214,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="storybook" href="https://storybook.js.org/docs/react/get-started/introduction">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/22632046?s=200&v=4" alt="storybook"/>
-
+                    </br>
                 storybook
         </a>
     </td>
@@ -234,7 +234,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="eslint" href="https://eslint.org/docs/user-guide/getting-started">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/6019716?s=200&v=4" alt="eslint"/>
-
+                    </br>
                 eslint
         </a>
     </td>
@@ -254,7 +254,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="husky" href="https://typicode.github.io/husky/">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://res.cloudinary.com/practicaldev/image/fetch/s--3HkALzIp--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v67mrvpgrqg19k3ifgll.png" alt="husky"/>
-
+                    </br>
                 husky
         </a>
     </td>
@@ -292,7 +292,7 @@ optional arguments:
         <a style="display: inline-flex;align-items: center;padding-top:10px;
     flex-direction: column; font-size:14px" aria-label="prettier" href="https://prettier.io/docs/en/index.html">
             <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/25822731?s=200&v=4" alt="prettier"/>
-
+                    </br>
                 prettier
         </a>
     </td>
