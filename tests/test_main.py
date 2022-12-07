@@ -38,17 +38,17 @@ def test_env(generate_env):
 
 
 @pytest.mark.parametrize(
-    'contributors_data, row, width, font_size, head,tail, rsb, contributors_table',
+    'dev_stack_data, row, width, font_size, head,tail, rsb, dev_stack_table',
     case['test_table_case'])
-def test_table(contributors_data, row, width, font_size, head, tail, rsb,
-               contributors_table):
-    assert contributors_table == main.generate_contributors_table(
-        contributors_data, row, width, font_size, head, tail, rsb)
+def test_table(dev_stack_data, row, width, font_size, head, tail, rsb,
+               dev_stack_table):
+    assert dev_stack_table == main.generate_dev_stack_table(
+        dev_stack_data, row, width, font_size, head, tail, rsb)
 
 
 @pytest.mark.parametrize(
-    'content, contributors_table, DEV_STACK, PATH, text',
+    'content, dev_stack_table, DEV_STACK, PATH, text',
     case['test_content_case'])
-def test_content(content, contributors_table, DEV_STACK, PATH, text):
-    assert text == main.generate_content(content, contributors_table,
+def test_content(content, dev_stack_table, DEV_STACK, PATH, text):
+    assert text == main.generate_content(content, dev_stack_table,
                                          DEV_STACK, PATH)

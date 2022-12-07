@@ -1,5 +1,5 @@
 name: "Auto-add versions"
-description: "Add version and implementation to the ReadMe"
+description: "Add version and tool to the ReadMe"
 author: "Vithano"
 branding:
   icon: 'award'
@@ -17,7 +17,7 @@ inputs:
     description: "Github Access Token you want to use. Just pass GITHUB_TOKEN"
     required: true
   IMG_WIDTH:
-    description: "Width of img"
+    description: "Width of logo (px)"
     required: false
     default: '50'
   FONT_SIZE:
@@ -25,7 +25,7 @@ inputs:
     required: false
     default: '18'
   PATH:
-    description: "Path to the file you want to add contributors' list. You can use <branch>:<file> format to specify the branch"
+    description: "Path to the file you want to add the dev stack table. You can use <branch>:<file> format to specify the branch"
     required: false
     default: '/README.md'
   BRANCH:
@@ -44,10 +44,6 @@ inputs:
     description: "Set `round` for round avatar and `square` for square avatar"
     required: false
     default: 'square'
-  IGNORED_CONTRIBUTORS:
-    description: "Ignored contributors, seperated by comma"
-    required: false
-    default: ''
   COLUMNS:
     description: "The column names"
     required: false

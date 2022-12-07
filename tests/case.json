@@ -8,7 +8,9 @@
         "PACKAGES_TO_SHOW",
         "PATH",
         "COMMIT_MESSAGE",
-        "AVATAR_SHAPE"
+        "AVATAR_SHAPE",
+        "COLUMNS",
+        "TYPES_TO_SHOW"
     ],
     "test_table_case": [
         [

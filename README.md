@@ -1,11 +1,11 @@
-# add-contributors
+# add-add-stack
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b8d0af034c5c4699805c6aca898787e7)](https://app.codacy.com/manual/bobankhshen/add-contributors?utm_source=github.com&utm_medium=referral&utm_content=BobAnkh/add-contributors&utm_campaign=Badge_Grade_Dashboard)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/BobAnkh/add-contributors?color=orange&logo=github-actions)
-![language-python](https://img.shields.io/github/languages/top/BobAnkh/add-contributors?logo=python&logoColor=yellow)
-![LICENSE Apache-2.0](https://img.shields.io/github/license/BobAnkh/add-contributors?logo=apache)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b8d0af034c5c4699805c6aca898787e7)](https://app.codacy.com/manual/vithano/add-dev-stack?utm_source=github.com&utm_medium=referral&utm_content=vithano/add-dev-stack&utm_campaign=Badge_Grade_Dashboard)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/vithano/add-dev-stack?color=orange&logo=github-actions)
+![language-python](https://img.shields.io/github/languages/top/vithano/add-dev-stack?logo=python&logoColor=yellow)
+![LICENSE Apache-2.0](https://img.shields.io/github/license/vithano/add-dev-stack?logo=apache)
 
-A Github Action to add contributors to your markdown file(i.e. README.md) automatically on schedule or triggered by events
+A Github Action to add a dev stack to your markdown file(i.e. README.md) automatically on schedule or triggered by events
 
 Specifically handle unreachable Chinese context (着重解决了中文内容乱码的问题)
 
@@ -15,32 +15,34 @@ Welcome contributors to improve this project together!
 
 ## Usage
 
-Create a workflow file such as `.github/workflows/contributors.yml` (you can find it in this repo)
+Create a workflow file such as `.github/workflows/dev-stack.yml` (you can find it in this repo)
 
 ```yaml
-name: Add contributors
+name: Add dev stack
 on:
   schedule:
     - cron:  '20 20 * * *'
-# push:
-#   branches:
-#     - master
+push:
+  branches:
+    - master
+  paths:
+    - "package.json"
 
 jobs:
-  add-contributors:
+  add-dev-stack:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: BobAnkh/add-contributors@master
+    - uses: actions/checkout@v3
+    - uses: vithano/add-dev-stack@master
       with:
         CONTRIBUTOR: '### Dev stack'
-        COLUMN_PER_ROW: '6'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        IMG_WIDTH: '100'
-        FONT_SIZE: '14'
+        IMG_WIDTH: '50'
+        FONT_SIZE: '18'
         PATH: '/README.md'
-        COMMIT_MESSAGE: 'docs(README): update contributors'
+        COMMIT_MESSAGE: 'docs(README): update dev stack'
         AVATAR_SHAPE: 'round'
+        TYPES_TO_SHOW: 'Package manager,Monorepo manager,Frontend Framework,CSS Framework,Server-client communication,Backend Framework,ORM,Test runner,Testing components,Component library,Mocking,Lint'
 ```
 
 ### Parameters
@@ -51,26 +53,27 @@ jobs:
 | CONTRIBUTOR          | Where you want to add contributors list                     | no       | `### Dev stack`                                 |
 | COLUMN_PER_ROW       | Number of contributors per row                              | no       | `6`                                                |
 | ACCESS_TOKEN         | Github Access Token                                         | yes      | You can just pass `${{secrets.GITHUB_TOKEN}}`      |
-| IMG_WIDTH            | Width of img                                                | no       | `100`                                              |
+| IMG_WIDTH            | Width of avatar                                                | no       | `100`                                              |
 | FONT_SIZE            | Font size of name (px)                                      | no       | `14`                                               |
 | PATH                 | Path to the file you want to add contributors' list         | no       | `/README.md`                                       |
 | BRANCH               | The branch to update file specified in PATH                 | no       | `''` which means default branch                    |
 | PULL_REQUEST         | Open a new pull request if set to a target branch name      | no       | `''` which means not open pull request by default  |
-| COMMIT_MESSAGE       | commit message                                              | no       | `docs(README): update contributors`                |
+| COMMIT_MESSAGE       | commit message                                              | no       | `docs(README): update dev stack`                |
 | AVATAR_SHAPE         | Set `round` for round avatar and `square` for square avatar | no       | square                                             |
-| IGNORED_CONTRIBUTORS | Ignored contributors, seperated by comma                    | no       | `''`                                               |
+| COLUMNS              | the column names                                            | no       | `'Type,Package,Version'`                |
+| PACKAGES_TO_SHOW     | if you wish to show specific packages, you can specifiy their names                  | no       | `all`                |
+| TYPES_TO_SHOW        | if you wish to show specific types or order them            | no       | `all`, Possible values are 'Package manager,Bundler,Test runner,UI Library,Frontend Framework,Frontend Language,GraphQL,Monorepo manager,CSS Framework,Server-client communication,Backend Framework,Mobile Framework,Testing components,ORM,Test runner,Component library,Documentation,Mocking,Lint                |
+`''`                                               |
 
-> NOTE: You should leave a blank line after the `CONTRIBUTOR` line for the first time
+> NOTE: You should leave a blank line after the `### Dev stack` line for the first time
 >
 > NOTE: Github seems not support image style in markdown file rendering yet
->
-> NOTE: `IGNORED_CONTRIBUTORS` takes **display name** not **username**
 > 
 > NOTE: `PULL_REQUEST` must be used with `BRANCH` together, both **should be provided** if you want to **open a pull request**
 
 ## Maintainer
 
-[@BobAnkh](https://github.com/BobAnkh)
+[@BobAnkh](https://github.com/vithano)
 
 ## How to contribute
 
