@@ -183,7 +183,7 @@ optional arguments:
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/vitest">
-            <img src="https://img.shields.io/badge/1.0.4-brightgreen" alt="vitest"/>
+            <img src="https://img.shields.io/badge/1.1.0-brightgreen" alt="vitest"/>
         </a>
     </td>
 
