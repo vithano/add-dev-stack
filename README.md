@@ -263,7 +263,7 @@ optional arguments:
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/husky">
-            <img src="https://img.shields.io/badge/8.0.1-brightgreen" alt="husky"/>
+            <img src="https://img.shields.io/badge/8.0.1-yellow" alt="husky"/>
         </a>
     </td>
 
