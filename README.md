@@ -243,7 +243,7 @@ optional arguments:
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/eslint">
-            <img src="https://img.shields.io/badge/7.32.0-red" alt="eslint"/>
+            <img src="https://img.shields.io/badge/7.32.0-brightgreen" alt="eslint"/>
         </a>
     </td>
 
