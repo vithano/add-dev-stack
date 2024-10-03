@@ -123,7 +123,7 @@ optional arguments:
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/pnpm">
-            <img src="https://img.shields.io/badge/6.14.2-red" alt="pnpm"/>
+            <img src="https://img.shields.io/badge/6.14.2-brightgreen" alt="pnpm"/>
         </a>
     </td>
 
