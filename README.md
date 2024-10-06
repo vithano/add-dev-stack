@@ -301,7 +301,7 @@ optional arguments:
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/prettier">
-            <img src="https://img.shields.io/badge/2.7.1-yellow" alt="prettier"/>
+            <img src="https://img.shields.io/badge/2.7.1-brightgreen" alt="prettier"/>
         </a>
     </td>
 
