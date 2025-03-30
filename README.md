@@ -203,7 +203,7 @@ optional arguments:
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@testing-library/react">
-            <img src="https://img.shields.io/badge/13.4.0-red" alt="@testing-library/react"/>
+            <img src="https://img.shields.io/badge/13.4.0-brightgreen" alt="@testing-library/react"/>
         </a>
     </td>
 
