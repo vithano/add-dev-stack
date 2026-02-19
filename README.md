@@ -143,7 +143,7 @@ optional arguments:
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/turbo">
-            <img src="https://img.shields.io/badge/latest-brightgreen" alt="turbo"/>
+            <img src="https://img.shields.io/badge/2.8.10-brightgreen" alt="turbo"/>
         </a>
     </td>
 
@@ -223,7 +223,7 @@ optional arguments:
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/storybook">
-            <img src="https://img.shields.io/badge/4-brightgreen" alt="storybook"/>
+            <img src="https://img.shields.io/badge/4-red" alt="storybook"/>
         </a>
     </td>
 
